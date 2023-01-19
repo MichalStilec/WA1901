@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const body = document.querySelector("body");
+        body.addEventListener('mousemove', function(e){
+            body.style.backgroundColor = 'rgb('+(e.clientX/7)+','+(e.clientX/7)+','+(e.clientX/7)+')';
+        });
+    </script>
+</body>
+</html>
+<style>
+    body {
+        height: 98vh;
+
+    }
+</style>
